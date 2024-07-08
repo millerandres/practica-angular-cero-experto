@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Character } from '../../interfaces/character.interface';
 
 @Component({
   selector: 'app-main-page',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class MainPageComponentTsComponent {
 
+  public characters: Character[] = [
+    {
+    name: 'goku',
+    power: 10000
+  },
+  {
+    name: 'Vegueta',
+    power: 8000
+  },
+  {
+    name: 'Broly',
+    power: 10000
+  }
+];
 }
