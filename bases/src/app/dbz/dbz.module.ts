@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MainPageComponentTsComponent } from './pages/main-page.component.ts/main-page.component.ts.component';
 import { ListComponent } from './components/list/list.component';
 import { AddCharacterComponent } from './components/add-character/add-character.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -16,7 +17,8 @@ import { AddCharacterComponent } from './components/add-character/add-character.
     MainPageComponentTsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class DbzModule { }

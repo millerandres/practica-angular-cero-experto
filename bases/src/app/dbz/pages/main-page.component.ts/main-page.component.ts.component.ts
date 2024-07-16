@@ -1,5 +1,5 @@
+import { Character } from './../../interfaces/character.interface';
 import { Component } from '@angular/core';
-import { Character } from '../../interfaces/character.interface';
 
 @Component({
   selector: 'app-main-page',
@@ -22,4 +22,14 @@ export class MainPageComponentTsComponent {
     power: 10000
   }
 ];
+//para insertar al final del arreglo: push
+//para insertar al inicio del arreglo: unshift
+onNewCharacter(Character: Character):void{
+  this.characters.push(Character);
+}
+
+onDeleteCharacter(index:number){
+  this.characters.splice(index,1);
+}
+  
 }
